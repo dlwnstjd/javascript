@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	table{ width:100%; border-collapse:collapse;}
+	th,td{ border: 3px solid #bcbcbc; text-align: center; padding: 8px;}
+	th{ background-color: #e2e2e2; color: #111111;}
+	td{ background-color: #f2f2f2;}
+	caption{
+		color: #1111; font-size: 20px; background-color: #f2f2f2;
+	}
+	.t1 { text-align: right;}
+</style>
+<script type="text/javascript">
+	function now_date(){
+		hour.value = parseInt(parseInt(input.value)/3600);
+		second.value = parseInt((parseInt(input.value)%3600)/60);
+		minute.value = (parseInt(input.value)%3600)%60;
+	}
+</script>
+</head>
+<body>
+<table>
+	<tr><th>입력초</th><th><input type="text" class="t1" id="input"></th><th><input type="button" value="시분초로환산하기" onclick="now_date()"></th></tr>
+	<tr><td>시간</td><td>분</td><td>초</td></tr>
+	<tr><td><input type="text" class="t1" id="hour"></td><td><input type="text" class="t1" id="second"></td><td><input type="text" class="t1" id="minute"></td></tr>
+</table>
+</body>
+</html>
